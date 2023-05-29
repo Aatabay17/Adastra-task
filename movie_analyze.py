@@ -67,35 +67,3 @@ if __name__ == '__main__':
     movie_dataset_analyzer.print_number_of_movies_released_each_year()
 
     movie_dataset_analyzer.save_to_json('movies_metadata.json')
-
-
-
-
-# 1. Load the dataset from a CSV file.
-#df_movies = pd.read_csv('movies_metadata.csv')
-
-#df_ratings = pd.read_csv('ratings.csv')
-
-# 2. Print the number of movies in the dataset.
-#movies_num = df_movies.id.unique().size
-
-# 3. Print the average rating of all the movies.
-#avg_movie_rate = df_ratings['rating'].mean()
-
-#4. Print the top 5 highest rated movies.
-#top_rated = df_ratings.nlargest(5, 'rating')
-
-#5. Print the number of movies released each year.
-
-#df_ratings['datetime'] = pd.to_datetime(df_ratings['timestamp'], unit='s')
-
-#df_ratings['year'] = df_ratings['datetime'].dt.year
-
-#year_counts = df_ratings['year'].value_counts()
-
-
-#6. Print the number of movies in each genre.
-
-
-#7. Save the dataset to a JSON file.
-#df_movies.to_json('movies_metadata.json', orient="records")
